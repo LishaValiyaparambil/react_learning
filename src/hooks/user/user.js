@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function UserRegistration() {
+function User() {
  
     const [user, setUser] = useState({});
   
@@ -25,4 +25,4 @@ function UserRegistration() {
     )
 }
 
-export default UserRegistration;
+export default User;
