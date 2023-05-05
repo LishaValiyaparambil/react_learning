@@ -5,13 +5,29 @@ import App from './App';
 import UserRegistration from './hooks/user/user';
 import reportWebVitals from './reportWebVitals';
 import SignUp  from './hooks/user/UserRegistration';
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import GetUsers from './hooks/user/userListing'
+import { BrowserRouter as Router } from "react-router-dom"
+import { RootRoute } from "../src/router";
+const root = ReactDOM.createRoot(
+  document.getElementById('root')
+);
 root.render(
   <React.StrictMode>
-    <SignUp/>
+     <Router>
+     <RootRoute />
+     </Router>
+    
   </React.StrictMode>
 );
 
+// export default function MainLayout() {
+//     return (
+//         <main>
+ 
+//             <RootRoute />
+//         </main>
+//     )
+// }
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
