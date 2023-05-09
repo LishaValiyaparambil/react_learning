@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import UserRegistration from './hooks/user/user';
+import UserRegistration from './componets/user/user';
 import reportWebVitals from './reportWebVitals';
-import SignUp  from './hooks/user/UserRegistration';
-import GetUsers from './hooks/user/userListing'
+import SignUp  from './componets/user/UserRegistration';
+import GetUsers from './componets/user/userListing'
 import { BrowserRouter as Router } from "react-router-dom"
 import { RootRoute } from "../src/router";
 const root = ReactDOM.createRoot(
